@@ -1,0 +1,513 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding: 90px 40px;
+    background: #122e44;
+}
+
+.section_title{
+    margin-bottom: 30px;
+}
+
+.section_title h2{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    transition: all .5s ease-in-out;
+}
+.section_title h2:hover{
+    background-color: #24CAAC;
+}
+
+/* HEADER */
+
+header{
+    background: rgb(44, 37, 37);
+    border-bottom: 1px solid rgba(238, 238, 238, 0.801);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #575757;
+}
+
+.nav_links{
+    display: flex;
+}
+
+.nav_links li a{
+    margin-left: 10px;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.nav_links li a:hover{
+    background: #24CAAC;
+}
+
+.logo h2 a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+/* ANASAYFA */
+
+.inner_anasayfa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    color: #fff;
+    padding: 1px;
+}
+.child_anasayfa{
+    flex-basis: 100%;
+}
+.child_anasayfa h1{
+    font-size: 60px;
+    color: #24CAAC;
+}
+.span_child{
+    color: #e0376f;
+}
+.child_anasayfa p{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.btn{
+    background: #24CAAC;
+    padding: 12px 28px;
+    border-radius: 20px;
+    color: #fff;
+    border: 1px solid #24CAAC;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn:hover{
+    background: transparent;
+    letter-spacing: 2px;
+}
+
+/* YAZILIMLAR */
+
+.innersoftware{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: #fff;
+}
+.innersoftware_child{
+    flex-basis: 31%;
+    color: #fff;
+    padding: 178px 90px;
+    background: rgba(55, 66, 80, 0.281);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all .5s ease-in-out;
+}
+.innersoftware_child:hover{
+    border: 1px solid #24CAAC;
+}
+.innersoftware_child .icon{
+    font-size: 25px;
+    color: #24CAAC;
+}
+.innersoftware_child h3{
+    font-size: 20px;
+    margin: 5px 0;
+}
+.innersoftware_child p{
+    font-size: 16px;
+}
+/* SERTİFİKALARIM */
+
+.inner_courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 26px 60px;
+}
+.child_courses{
+    flex-basis: 28%;
+    color: #fff;
+    padding: 20px 10px 20px 10px;
+    border: 5px solid transparent;
+    transition: .3s;
+    border-radius: 6px;
+}
+.child_courses:hover{
+    border: 1px solid #24CAAC;
+}
+.child_courses .detail{
+    display: flex;
+    justify-content: space-between;
+}
+.child_courses .detail ul{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 30%;
+}
+.child_courses .detail ul li{
+    color: gold;
+}
+/* PROJELER */
+
+.inner_achivement{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px ;
+}
+.child_achivement{
+    flex-basis: 40%;
+}
+.child_achivement img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.child_achivement2{
+    flex-basis: 46%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+.single_detail{
+    flex-basis: 48%;
+    padding: 40px 30px;
+    color: #fff;
+    border-radius: 5px;
+    transition: .3s;
+}
+.single_detail a {
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    color: inherit; /* Mevcut yazı rengini korur */
+}
+
+.single_detail a:hover {
+    color: #007bff; /* Üzerine gelindiğinde yazı rengini değiştirir */
+    text-decoration: underline; /* Alt çizgiyi ekler */
+}
+
+.single_detail:hover{
+    transform: scale(1.03);
+}
+.sd_1{
+    background: #EAA023;
+    margin-bottom: 20px;
+}
+.sd_2{
+    background: red;
+    margin-bottom: 20px;
+}
+.sd_3{
+    background: green;
+
+}
+.sd_4{
+    background: blue;
+
+}
+/* HAKKIMDA */
+
+.inner_testi{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    padding: 62.5px;
+}
+.child_testi{
+    flex-basis: 46%;
+    margin-bottom: 30px;
+}
+.testi_img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+.testi_img img{
+    border-radius: 50%;
+}
+.test_highlight{
+    color: #24CAAC;
+    margin: 10px 0;
+    display: inline-block;
+}
+.test_highlight:hover{
+    text-decoration: underline;
+}
+/* HOBİLERİM */
+
+#hobilerim {
+    padding: 151.6px 115px;
+    background-color: #122e44;
+    text-align: center;
+    display: flex; /* Ekranı ortalamak için eklenmiştir */
+    align-items: center; /* Dikey ortalama */
+    justify-content: center; /* Yatay ortalama */
+    flex-direction: column; /* İçeriklerin dikey sırayla yerleşmesi için */
+}
+
+#hobilerim .section_title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.hobbies_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hobby_card {
+    width: 250px;
+    height: 150px;
+    perspective: 1000px;
+}
+
+.hobby_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+
+.hobby_card:hover .hobby_inner {
+    transform: rotateY(180deg);
+}
+
+.hobby_front, .hobby_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hobby_front {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid #ddd;
+}
+
+.hobby_back {
+    background: #ffffff;
+    color: #333;
+    transform: rotateY(180deg);
+    padding: 15px;
+    font-size: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* İLETİŞİM */
+.inner_contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+.child_contact{
+    flex-basis: 45%;
+}
+.child_contact form{
+    padding: 50px 40px;
+    background: #2F363E;
+    border-radius: 5px;
+}
+.child_contact form input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #24292D;
+    border: none;
+    resize: none;
+    border-radius: 25px;
+    transition: .3s ease-in;
+}
+.child_contact form input,textarea:focus{
+    color: #fff;
+
+
+
+}
+.child_contact form input:focus{
+    letter-spacing: 1px;
+}
+.child_contact form textarea:focus{
+    letter-spacing: 1px;
+}
+.child_contact form input:last-child{
+    margin-bottom: 0;
+    background: #24CAAC;
+    border: 1px solid #24CAAC;
+    transition: .3s;
+}
+.child_contact form input:last-child:hover{
+    background: transparent;
+    color: #fff;
+}
+.aslan-logo {
+    width: 120px; /* Logonun genişliği */
+    height: auto; /* Oranını koruması için */
+    margin-right: 50px; /* Metin ile logo arasında boşluk */
+    vertical-align: middle; /* Logoyu metin ile hizala */
+    position: relative;
+    top: -30px; /* Logo yukarıya taşındı */
+    animation: logoMove 2s infinite; /* Hareket animasyonu eklendi */
+}
+/* Logo hareketi için animasyon */
+@keyframes logoMove {
+    0% {
+        transform: translateY(0); /* Başlangıç pozisyonu */
+    }
+    50% {
+        transform: translateY(-10px); /* Yukarıya kaydırma */
+    }
+    100% {
+        transform: translateY(0); /* Sonra eski haline döner */
+    }
+}
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.info_box {
+    background-color: #333; /* Kutunun arka plan rengi */
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.info_box h3 {
+    color: #fff; /* Başlıkların beyaz rengi */
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.info_box p {
+    color: #fff; /* Yazıların beyaz rengi */
+    font-size: 16px;
+    margin: 0;
+}

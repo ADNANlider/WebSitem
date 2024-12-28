@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/all.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>İletişim - Portfolio ADNAN</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2><a href="#">Adnan Karadağ</a></h2>
+            </div>
+            <ul class="nav_links">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="yazilimlar.html">Yazılımlar</a></li>
+                <li><a href="sertifikalarim.html">Sertifikalarım</a></li>
+                <li><a href="projelerim.html">Projelerim</a></li>
+                <li><a href="hakkımda.html">Hakkımda</a></li>
+                <li><a href="hobilerim.html">Hobilerim</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </header>
+     <!-- İLETİŞİM -->
+<section id="iletisim">
+    <div class="section_title">
+        <h2>İletişime Geç</h2>
+    </div>
+    <div class="inner_contact">
+        <!-- Görsel Alanı -->
+        <div class="child_contact">
+            <img src="/img/iletisim.jpeg" alt="İletişim Görseli">
+        </div>
+        <!-- İletişim Bilgileri ve Form -->
+        <div class="child_contact">
+            <!-- İletişim Bilgileri -->
+            <div class="contact_info">
+                <div class="info_box">
+                    <h3>Telefon</h3>
+                    <p>+90 555 123 4567</p>
+                </div>
+                <div class="info_box">
+                    <h3>E-posta</h3>
+                    <p>adnan.karadag@example.com</p>
+                </div>
+            </div>
+            <!-- İletişim Formu -->
+            <form action="#">
+                <input placeholder="İsim" type="text" name="fullname" id="">
+                <input placeholder="E-mail" type="text" name="email" id="">
+                <input placeholder="Telefon" type="text" name="phone" id="">
+                <textarea placeholder="Mesaj" name="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Gönder">
+            </form>
+        </div>
+    </div>
+</section>
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        // Form alanlarını seç
+        const name = document.querySelector('input[name="fullname"]').value.trim();
+        const email = document.querySelector('input[name="email"]').value.trim();
+        const phone = document.querySelector('input[name="phone"]').value.trim();
+        const message = document.querySelector('textarea[name="message"]').value.trim();
+
+        // Eğer herhangi bir alan boşsa uyarı ver ve form gönderimini engelle
+        if (!name || !email || !phone || !message) {
+            event.preventDefault(); // Form gönderimini engeller
+            alert('Lütfen tüm alanları doldurun!');
+        }
+    });
+</script>
+
+
+
+
+
+</body>
+</html>  
